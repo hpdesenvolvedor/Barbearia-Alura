@@ -84,7 +84,7 @@ nav a:hover {
 
 footer {
 	text-align: center;
-	background: url("bg.jpg");
+	background: url("./img/bg.jpg");
 	padding: 40px 0;
 }
 
@@ -94,9 +94,6 @@ footer {
 	margin: 20px 0 0;
 }
 
-main {
-	
-}
 
 form {
 	margin: 40px 0;
@@ -211,6 +208,7 @@ td, th {
 .beneficios {
     padding: 3em 0;
     background: #888888;
+
 }
 
 .conteudo-beneficios {
@@ -239,10 +237,33 @@ td, th {
 
 .imagem-beneficios {
 	width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
 }
 
 .video {
     width: 560px;
     margin: 2em auto;
 
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
 }
